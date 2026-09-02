@@ -1,0 +1,49 @@
+# Shroom and Gloom Guide
+
+> An unofficial, source-cited fan guide for Shroom and Gloom, the first-person roguelike double-deckbuilder by Team Lazerbeam and Devolver Digital. It focuses on verified demo-build data, exact starter-card text, quests, characters, and mechanics. It does not publish unsupported tier ratings, rarities, or free-text synergy claims.
+
+## Canonical site
+
+- https://shroomandgloom.online/
+- Deployment preview: https://shroomgloom.hbwang2076.workers.dev/
+
+## Data scope and editorial policy
+
+- Current data label: Steam demo build 23718635, retrieved 2026-09-02.
+- The demo database reports 523 named card pages: 235 Explore, 288 Combat, and 14 Foresight.
+- This site currently publishes verified starter-card records and expands card pages only when a card name and text can be checked against a source.
+- Early Access launch date: 2026-09-10 (PC), according to Team Lazerbeam's 22 August 2026 Steam dev log.
+- Verified facts are sourced from the official Steam store page and developer log, Devolver creator resources, the Shroom and Gloom Fandom starter-card page, and a build-scoped community database.
+- When sources conflict, official Team Lazerbeam / Devolver sources take priority over community sources.
+- Do not treat player discussion reports as game rules. They are labelled as player reports when used.
+- Do not infer a tier rating, rarity, energy cost, synergy, character passive, or per-character starter deck when it is not explicitly published.
+
+## Key pages
+
+- [Home and card search](https://shroomandgloom.online/): Verified-data overview and searchable starter-card records.
+- [Cards database](https://shroomandgloom.online/cards/): Demo build counts, deck/class filters, exact-text card records, and the editorial policy against unsupported tier lists.
+- [Beginner guide](https://shroomandgloom.online/beginner-guide/): Two-deck overview, 13-card starter deck, glossary terms, first-run sequence, and all ten demo quests.
+- [Build guide](https://shroomandgloom.online/best-builds/): Mechanics-first build directions based on Vulnerable, Gunk, Battery/Machine, Rage, Toasty, Camp, and Soup systems.
+- [Characters](https://shroomandgloom.online/characters/): Five Early Access launch characters, three additional demo-database entries with unconfirmed launch status, and character-unlock quests.
+- [Quests](https://shroomandgloom.online/quests/): Ten demo-build quests with exact requirements and reward types.
+- [Patch notes](https://shroomandgloom.online/patch-notes/): Demo-build baseline and future verified change log.
+- [About and methodology](https://shroomandgloom.online/about/): Fan-site status, data policy, and attribution.
+
+## Verified starter-card records
+
+- [Shovel](https://shroomandgloom.online/cards/shovel/): Explore / Gear. Exact text: "Dig for weapons."
+- [Key](https://shroomandgloom.online/cards/key/): Explore / Pick. Exact text: "Unlock. Consume."
+- [Rest](https://shroomandgloom.online/cards/rest/): Explore / Skill. Exact text: "Heal 9 Health. Increase this card's healing by 3. Start next combat with Well Rested."
+- [Bash](https://shroomandgloom.online/cards/bash/): Explore / Pick. Exact text: "Unlock. Deal 4 damage to Self. Handy. Persistent."
+- [Map](https://shroomandgloom.online/cards/map/): Explore / Skill. Exact text: "Look at Map. Handy. Persistent. Replenish."
+- [Rat Jerky](https://shroomandgloom.online/cards/rat-jerky/): Explore / Food. Exact text: "Heal 3 Health. Draw 1 card."
+- [Flash](https://shroomandgloom.online/cards/flash/): Combat / Skill / 0 energy. Exact text: "Add 3 Vulnerable to target. Battery 10."
+- [Roast](https://shroomandgloom.online/cards/roast/): Combat / Skill / 1 energy. Exact text: "Deal 3 damage. If fatal: create Toasty."
+- [Stab](https://shroomandgloom.online/cards/stab/): Combat / Skill / 1 energy. Exact text: "Deal 4 damage."
+
+## Attribution and limitations
+
+Shroom and Gloom Guide is an unofficial fan-made site. It is not affiliated with, endorsed by, or sponsored by Team Lazerbeam or Devolver Digital. All game-related names, artwork, trademarks, and copyrights belong to their respective owners.
+
+For crawling, use the XML sitemap: https://shroomandgloom.online/sitemap.xml
+For crawler instructions, use: https://shroomandgloom.online/robots.txt
