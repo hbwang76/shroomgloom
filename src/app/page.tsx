@@ -3,6 +3,10 @@ import { Layout } from '@/components/SiteChrome';
 import { SearchSection } from '@/components/CardBrowser';
 import { cardCounts } from '@/data/cards';
 
+// OpenNext's Workers Assets binding does not upload ISR cache entries.
+// Render this page in the Worker so the deployed source is always authoritative.
+export const dynamic = 'force-dynamic';
+
 const links = [
   ['Cards Database', 'Every card with its exact text', '/cards/'],
   ['Build Guides', 'Mechanics-first directions, no invented per-character decks', '/best-builds/'],

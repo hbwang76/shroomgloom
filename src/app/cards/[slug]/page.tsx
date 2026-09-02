@@ -1,13 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Layout } from '@/components/SiteChrome';
-import { cards, deckLabel, getCard } from '@/data/cards';
+import { deckLabel, getCard } from '@/data/cards';
 
-export function generateStaticParams() {
-  return cards.map((card) => ({ slug: card.slug }));
-}
-
-export const dynamicParams = false;
+// OpenNext's Workers Assets binding does not upload ISR cache entries.
+// Render verified card pages in the Worker instead of requesting a missing cache file.
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const card = getCard(params.slug);

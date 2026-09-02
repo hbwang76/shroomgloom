@@ -4,11 +4,9 @@ import { Layout } from '@/components/SiteChrome';
 import { CardBrowser } from '@/components/CardBrowser';
 import { pageCopy } from '@/lib/page-data';
 
-export function generateStaticParams() {
-  return Object.keys(pageCopy).map((path) => ({ section: path.split('/')[1] }));
-}
-
-export const dynamicParams = false;
+// OpenNext's Workers Assets binding does not upload ISR cache entries.
+// Render these guide routes in the Worker rather than serving a missing cache file.
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata({ params }: { params: { section: string } }): Promise<Metadata> {
   const data = pageCopy[`/${params.section}/` as keyof typeof pageCopy];
