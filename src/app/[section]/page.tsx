@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Layout } from '@/components/SiteChrome';
 import { CardBrowser } from '@/components/CardBrowser';
+import { GuideContent } from '@/components/GuideContent';
 import { pageCopy } from '@/lib/page-data';
 
 // OpenNext's Workers Assets binding does not upload ISR cache entries.
@@ -48,9 +49,12 @@ export default function SectionPage({ params }: { params: { section: string } })
             </div>
           </section>
         ) : (
-          <section className="page-content">
-            <p className="subhead">Need the quick answer? <Link href="/">Search the card browser</Link> or return to the <Link href="/best-builds/">best builds</Link>.</p>
-          </section>
+          <>
+            <section className="page-content">
+              <GuideContent section={params.section} />
+            </section>
+            <p className="subhead">Need the quick answer? <Link href="/">Search the card browser</Link> or return to the <Link href="/cards/">cards database</Link>.</p>
+          </>
         )}
       </div>
     </Layout>
