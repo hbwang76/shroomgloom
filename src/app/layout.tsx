@@ -2,13 +2,24 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://shroomgloom.online'),
-  title: { default: 'Shroom and Gloom Guide — Cards, Tier Lists & Best Builds', template: '%s | Shroom and Gloom Guide' },
-  description: 'Search Shroom and Gloom cards, browse tier lists, and find the best build for your character. Free to read.',
-  alternates: { canonical: 'https://shroomgloom.online/' },
-  openGraph: { title: 'Shroom and Gloom Guide — Cards, Tier Lists & Best Builds', description: 'Find the best card, build, or unlock path in under 30 seconds.', url: 'https://shroomgloom.online/', siteName: 'Shroom and Gloom Guide', type: 'website' },
+  metadataBase: new URL('https://shroomandgloom.online'),
+  title: {
+    default: 'Shroom and Gloom Guide — Cards, Builds, Quests',
+    template: '%s | Shroom and Gloom Guide',
+  },
+  description: 'Shroom and Gloom guide built on verified demo data: 523 cards across Explore, Combat and Foresight, ten quests, and the two characters that unlock. Card text straight from the source.',
+  alternates: { canonical: 'https://shroomandgloom.online/' },
+  openGraph: {
+    title: 'Shroom and Gloom Guide — Cards, Builds, Quests',
+    description: 'Built on Steam demo build 23718635. Every card\'s exact text, the full quest list, and the two character-unlock paths.',
+    url: 'https://shroomandgloom.online/',
+    siteName: 'Shroom and Gloom Guide',
+    type: 'website',
+  },
   twitter: { card: 'summary_large_image' },
   robots: { index: true, follow: true },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="en"><body>{children}</body></html>; }
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return <html lang="en"><body>{children}</body></html>;
+}

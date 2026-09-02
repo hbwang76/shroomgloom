@@ -1,12 +1,30 @@
-import { cards, deckLabel, tierClass } from '@/data/cards';
+import { cards, deckLabel, cardCounts } from '@/data/cards';
 
 export const pageCopy = {
-  '/tier-list/': { title: 'Shroom and Gloom Tier List — Best Cards Ranked', intro: "Take S-tier, take A-tier, and skip D-tier unless it combos with your existing build. Filter by Explore, Combat, or Foresight." },
-  '/best-builds/': { title: "Shroom and Gloom Best Builds — Every Character's Top Deck", intro: 'Decision-first build notes for the verified roster. The right build depends on your character, card offers, and current game build.' },
-  '/characters/': { title: 'All 7 Shroom and Gloom Characters & How to Unlock Them', intro: 'Compare starting and unlockable characters by playstyle. Hidden records remain undisclosed until they are publishable.' },
-  '/beginner-guide/': { title: 'Shroom and Gloom Beginner Guide — Your First Run to The Gloom', intro: 'A practical route through your first run: choose a character, keep your deck focused, understand Rest, and learn how Foresight triggers.' },
-  '/quests/': { title: 'Shroom and Gloom Quest Guide — Every Unlock in 3 Steps or Less', intro: 'Use this guide to understand quest prerequisites and character unlock chains. Provisional records stay clearly marked.' },
-  '/patch-notes/': { title: 'Shroom and Gloom Patch Notes — What Changed & What It Means', intro: 'A living log of the guide build and the editorial changes that follow each Steam patch.' },
+  '/cards/': {
+    title: 'Shroom and Gloom Card Database — All 523 Cards by Deck',
+    intro: 'Every Shroom and Gloom card from demo build 23718635: 235 Explore, 288 Combat, 14 Foresight, filterable by class and keyword, with exact in-game card text.',
+  },
+  '/best-builds/': {
+    title: 'Shroom and Gloom Builds — How to Build a Deck (Early Access)',
+    intro: 'How Shroom and Gloom deckbuilding actually works: the properties that matter, the cards you\'re most likely to want, and what to take at Grow Closer.',
+  },
+  '/characters/': {
+    title: 'Shroom and Gloom Characters — All 5 Launch Characters and How to Unlock Them',
+    intro: 'The five playable characters confirmed for Shroom and Gloom Early Access, the three more in the demo database, and the two quests that unlock new ones.',
+  },
+  '/beginner-guide/': {
+    title: 'Shroom and Gloom Beginner Guide — Your First Run, Card by Card',
+    intro: 'A first-run guide to Shroom and Gloom built on the actual starter deck: all 13 cards, what Handy and Persistent really do, and how to survive your first boss.',
+  },
+  '/quests/': {
+    title: 'Shroom and Gloom Quests — All 10 Quests and Rewards',
+    intro: 'Every Shroom and Gloom quest from demo build 23718635: exact requirements, rewards, which two unlock characters, and the order to tackle them in.',
+  },
+  '/patch-notes/': {
+    title: 'Shroom and Gloom Patch Notes — What Changed',
+    intro: 'Every verified Shroom and Gloom patch update: card text changes, count changes, and the demo-to-Early Access diff. Build-labelled and source-cited.',
+  },
 };
 
-export { cards, deckLabel, tierClass };
+export { cards, deckLabel, cardCounts };

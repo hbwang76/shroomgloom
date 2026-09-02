@@ -1,4 +1,4 @@
-// File: /root/projects/shroomandgloom/src/app/terms/page.tsx
+// File: /root/projects/shroomgloom/src/app/terms/page.tsx
 import * as entry from '../../../../src/app/terms/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
