@@ -1,0 +1,3 @@
+import { Layout } from '@/components/SiteChrome';
+export const metadata = { title: 'Cookie Policy — Shroom and Gloom Guide', robots: { index: false, follow: true } };
+export default function CookiesPage(){return <Layout><div className="shell main page-copy"><h1>Cookie Policy</h1><p><strong>Last updated:</strong> September 2, 2026</p><section><h2>What we use</h2><p>This static site may use strictly necessary Cloudflare security cookies. Planned analytics and advertising cookies are not part of the MVP.</p></section><section><h2>Control cookies</h2><p>Use your browser settings to block or delete cookies. For questions, email contact@shroomandgloom.online.</p></section></div></Layout>}

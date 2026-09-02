@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/cookies/page": "app/cookies/page.js",
+  "/privacy/page": "app/privacy/page.js",
+  "/terms/page": "app/terms/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/about/page": "app/about/page.js",
+  "/cards/[slug]/page": "app/cards/[slug]/page.js",
+  "/[section]/page": "app/[section]/page.js"
+}
