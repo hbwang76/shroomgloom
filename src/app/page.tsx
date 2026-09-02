@@ -8,10 +8,10 @@ import { cardCounts } from '@/data/cards';
 export const dynamic = 'force-dynamic';
 
 const links = [
-  ['Cards Database', 'Every card with its exact text', '/cards/'],
-  ['Build Guides', 'Mechanics-first directions, no invented per-character decks', '/best-builds/'],
-  ['All Characters', '5 confirmed at launch + 3 in the demo database', '/characters/'],
-  ['Beginner Guide', 'A real first run, using the verified 13-card starter', '/beginner-guide/'],
+  ['Cards Database', 'Every card with its exact text', '/cards/', '/images/shroomgloom/explore.webp', 'Explore cards in an underground passage'],
+  ['Build Guides', 'Mechanics-first directions, no invented per-character decks', '/best-builds/', '/images/shroomgloom/combat.webp', 'Combat cards in a fungal cavern'],
+  ['All Characters', '5 confirmed at launch + 3 in the demo database', '/characters/', '/images/shroomgloom/choice.webp', 'A post-encounter card choice'],
+  ['Beginner Guide', 'A real first run, using the verified 13-card starter', '/beginner-guide/', '/images/shroomgloom/cavern.webp', 'A candle-lit cavern exploration'],
 ];
 
 const faqs = [
@@ -41,10 +41,17 @@ export default function HomePage() {
   return (
     <Layout>
       <div className="shell main">
-        <section>
-          <span className="eyebrow">SHROOM AND GLOOM · EARLY ACCESS GUIDE</span>
-          <h1>Shroom and Gloom Guide</h1>
-          <p className="subhead">Search every card. See its exact text. Pick the right build.</p>
+        <section className="hero">
+          <picture className="hero-media" aria-hidden="true">
+            <source media="(max-width: 640px)" srcSet="/images/shroomgloom/hero-mobile.webp" type="image/webp" />
+            <img src="/images/shroomgloom/hero-desktop.webp" alt="" width="1920" height="900" fetchPriority="high" />
+          </picture>
+          <div className="hero-overlay" />
+          <div className="hero-copy">
+            <span className="eyebrow">SHROOM AND GLOOM · EARLY ACCESS GUIDE</span>
+            <h1>Shroom and Gloom Guide</h1>
+            <p className="subhead">Search every card. See its exact text. Pick the right build.</p>
+          </div>
         </section>
         <SearchSection />
         <section className="below">
@@ -74,10 +81,13 @@ export default function HomePage() {
           </div>
           <div>
             <div className="quick-links">
-              {links.map(([title, description, href]) => (
+              {links.map(([title, description, href, image, alt]) => (
                 <Link className="quick" href={href} key={href}>
-                  <h3>{title}</h3>
-                  <p>{description}</p>
+                  <img className="quick-image" src={image} alt={alt} width="800" height="450" loading="lazy" />
+                  <div className="quick-copy">
+                    <h3>{title}</h3>
+                    <p>{description}</p>
+                  </div>
                 </Link>
               ))}
             </div>

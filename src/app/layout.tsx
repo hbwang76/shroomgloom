@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description: 'Built on Steam demo build 23718635. Every card\'s exact text, the full quest list, and the two character-unlock paths.',
     url: 'https://shroomandgloom.online/',
     siteName: 'Shroom and Gloom Guide',
+    images: [{ url: '/images/shroomgloom/og-home.webp', width: 1200, height: 630, alt: 'Shroom and Gloom Guide' }],
     type: 'website',
   },
   twitter: { card: 'summary_large_image' },
