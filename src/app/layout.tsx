@@ -27,6 +27,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <head>
         <Script
+          src="https://plausible.shipsolo.io/js/script.js"
+          data-domain="shroomgloom.online"
+          strategy="afterInteractive"
+        />
+        <Script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="Qa2kCFJxL7qlwTx7+XEqZA"
           strategy="afterInteractive"
