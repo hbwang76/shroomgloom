@@ -1,14 +1,13 @@
 import Link from 'next/link';
-import Script from 'next/script';
 
 type JsonLdProps = { data: Record<string, unknown> | Record<string, unknown>[] };
 
 export function StructuredData({ data }: JsonLdProps) {
   return (
-    <Script
+    <script
       id={`json-ld-${Array.isArray(data) ? 'graph' : String(data['@type']).toLowerCase()}`}
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, '\\u003c') }}
     />
   );
 }

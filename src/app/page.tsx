@@ -116,6 +116,17 @@ export default function HomePage() {
             </details>
           ))}
         </section>
+        <section className="sources" aria-labelledby="homepage-sources">
+          <h2 id="homepage-sources">Sources and verification</h2>
+          <blockquote>
+            Card counts and quest data reflect demo build 23718635; the site was last verified on September 3, 2026.
+          </blockquote>
+          <ul className="subhead" style={{ listStyle: 'disc', paddingLeft: '1.5rem' }}>
+            <li><a href="https://store.steampowered.com/app/3271280/Shroom_and_Gloom" target="_blank" rel="noreferrer">Official Steam store page</a> — game features, platform, and release information.</li>
+            <li><a href="https://steamcommunity.com/app/3271280" target="_blank" rel="noreferrer">Team Lazerbeam Steam updates</a> — Early Access launch details and character list.</li>
+            <li><a href="/about/">Our About page</a> — source policy, verification method, and correction process.</li>
+          </ul>
+        </section>
       </div>
     </Layout>
   );
