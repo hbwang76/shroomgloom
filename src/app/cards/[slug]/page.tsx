@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Layout } from '@/components/SiteChrome';
 import { deckLabel, getCard } from '@/data/cards';
+import { GuideArticleSchema } from '@/components/StructuredData';
 
 // OpenNext's Workers Assets binding does not upload ISR cache entries.
 // Render verified card pages in the Worker instead of requesting a missing cache file.
@@ -38,6 +39,11 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
   return (
     <Layout>
       <div className="shell main page-copy">
+        <GuideArticleSchema
+          path={`/cards/${params.slug}/`}
+          title={`${card.name} — Shroom and Gloom Card`}
+          description={`${card.name} card guide with exact text, class, keywords, and verified notes from demo build 23718635.`}
+        />
         <span className="eyebrow">CARD GUIDE · {card.updated_at_build}</span>
         <div className="detail">
           <div className={`class-badge class-${card.className.toLowerCase()}`}>{card.className}</div>

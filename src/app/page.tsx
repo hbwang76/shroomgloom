@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Layout } from '@/components/SiteChrome';
 import { SearchSection } from '@/components/CardBrowser';
 import { cardCounts } from '@/data/cards';
+import { HomeFaqSchema } from '@/components/StructuredData';
 
 // OpenNext's Workers Assets binding does not upload ISR cache entries.
 // Render this page in the Worker so the deployed source is always authoritative.
@@ -100,6 +101,7 @@ export default function HomePage() {
           </p>
         </section>
         <section className="faq">
+          <HomeFaqSchema items={faqs} />
           <h2>Common questions</h2>
           {faqs.map((item) => (
             <details key={item.q}>

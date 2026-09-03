@@ -4,6 +4,7 @@ import { Layout } from '@/components/SiteChrome';
 import { CardBrowser } from '@/components/CardBrowser';
 import { GuideContent } from '@/components/GuideContent';
 import { pageCopy } from '@/lib/page-data';
+import { GuideArticleSchema } from '@/components/StructuredData';
 
 // OpenNext's Workers Assets binding does not upload ISR cache entries.
 // Render these guide routes in the Worker rather than serving a missing cache file.
@@ -24,6 +25,7 @@ export default function SectionPage({ params }: { params: { section: string } })
   return (
     <Layout>
       <div className="shell main page-copy">
+        <GuideArticleSchema path={`/${params.section}/`} title={data.title} description={data.intro} />
         <span className="eyebrow">SHROOM AND GLOOM GUIDE · DEMO BUILD 23718635</span>
         <h1>{data.title}</h1>
         <p className="subhead">{data.intro}</p>

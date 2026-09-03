@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { SiteStructuredData } from '@/components/StructuredData';
 
 export function Header() {
   return (
@@ -42,6 +43,7 @@ export function Footer() {
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
+      <SiteStructuredData />
       <Header />
       <main>{children}</main>
       <Footer />
