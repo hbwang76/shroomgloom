@@ -11,8 +11,7 @@ export const dynamic = 'force-dynamic';
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const card = getCard(params.slug);
   if (!card) return { title: 'Card not found' };
-  const description = (`${card.name} (${deckLabel[card.deck]}, ${typeof card.cost === 'number' ? `${card.cost}⚡` : 'cost unverified'}): exact text, class, keywords, and verified notes from demo build 23718635. See sources, acquisition, and practical use for this card in a run.`)
-    .padEnd(140, ' Gameplay notes.')
+  const description = (`${card.name} (${deckLabel[card.deck]}, ${typeof card.cost === 'number' ? `${card.cost}⚡` : 'cost unverified'}): exact text, class, keywords, and verified notes from demo build 23718635. See sources, acquisition, and practical use for this card in a run. Learn how to obtain and use it.`)
     .slice(0, 160);
   return {
     title: `${card.name} — Shroom and Gloom Card`,
