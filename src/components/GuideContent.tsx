@@ -29,7 +29,7 @@ function Table({ headers, rows }: { headers: string[]; rows: string[][] }) {
   return <div className="table-wrap"><table><thead><tr>{headers.map((header) => <th key={header}>{header}</th>)}</tr></thead><tbody>{rows.map((row) => <tr key={row.join('-')}>{row.map((cell) => <td key={cell}>{cell}</td>)}</tr>)}</tbody></table></div>;
 }
 
-function Sources() {
+export function Sources() {
   return <section className="sources"><h2>Sources and verification</h2><p>Retrieved September 3, 2026. Card values reflect demo build 23718635 and will be re-verified after Early Access launch on September 10, 2026.</p><ul><li><a href="https://store.steampowered.com/app/3271280/Shroom_and_Gloom" target="_blank" rel="noreferrer">Official Steam store page</a> — feature list, release date, and platform.</li><li><a href="https://steamcommunity.com/app/3271280" target="_blank" rel="noreferrer">Team Lazerbeam Steam updates</a> — Early Access launch content and character list.</li><li>Devolver Digital creator resources — eating, seasoning, roasting, and soup mechanics.</li><li>Shroom and Gloom Fandom wiki, <em>Starter Cards</em> — the 13 starter cards with exact text and starter advice.</li><li>A build-scoped community database, scoped to demo build 23718635 — counts, glossary, characters, and quests.</li></ul></section>;
 }
 

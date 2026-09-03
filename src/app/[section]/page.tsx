@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Layout } from '@/components/SiteChrome';
 import { CardBrowser } from '@/components/CardBrowser';
-import { GuideContent } from '@/components/GuideContent';
+import { GuideContent, Sources } from '@/components/GuideContent';
 import { pageCopy } from '@/lib/page-data';
 import { EditorialByline, GuideArticleSchema } from '@/components/StructuredData';
 
@@ -16,6 +16,12 @@ export async function generateMetadata({ params }: { params: { section: string }
     title: data.title,
     description: data.intro,
     alternates: { canonical: `https://shroomgloom.online/${params.section}/` },
+    openGraph: {
+      type: 'website',
+      url: `https://shroomgloom.online/${params.section}/`,
+      title: data.title,
+      description: data.intro,
+    },
     other: { 'article:published_time': '2026-09-02', 'article:modified_time': '2026-09-03' },
   };
 }
@@ -51,6 +57,7 @@ export default function SectionPage({ params }: { params: { section: string } })
                 If you came here for &quot;just tell me the best card,&quot; the honest answer is the mechanics that make <em>any</em> card good.
               </p>
             </div>
+            <Sources />
           </section>
         ) : (
           <>
