@@ -97,7 +97,7 @@ export default function HomePage() {
         <section className="trust-strip">
           <p className="subhead">
             <strong>Updated for the Early Access build.</strong> Every card and build page lists the game build number it was verified against.
-            Outdated pages get a banner pointing to the latest patch. If something&apos;s wrong, the <Link href="/about">About page</Link> has a contact link.
+            Outdated pages get a banner pointing to the latest patch. If something&apos;s wrong, the <Link href="/contact/">Contact page</Link> has the correction link.
           </p>
         </section>
         <section className="faq">

@@ -9,6 +9,7 @@ export const metadata: Metadata = {
     template: '%s | Shroom and Gloom Guide',
   },
   description: 'Shroom and Gloom guide with verified demo data: 523 cards, ten quests, and two character unlocks. Read exact card text from cited sources and build labels.',
+  applicationName: 'Shroom and Gloom Guide',
   alternates: { canonical: 'https://shroomgloom.online/' },
   openGraph: {
     title: 'Shroom and Gloom Guide — Cards, Builds, Quests',
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     images: [{ url: '/images/shroomgloom/og-home.webp', width: 1200, height: 630, alt: 'Shroom and Gloom Guide' }],
     type: 'website',
   },
-  twitter: { card: 'summary_large_image' },
+  twitter: { card: 'summary_large_image', title: 'Shroom and Gloom Guide — Cards, Builds, Quests' },
   robots: { index: true, follow: true },
 };
 

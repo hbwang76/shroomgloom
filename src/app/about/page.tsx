@@ -1,4 +1,5 @@
 import { Layout } from '@/components/SiteChrome';
+import { EditorialByline, GuideArticleSchema } from '@/components/StructuredData';
 
 export const metadata = {
   title: 'About — Shroom and Gloom Guide',
@@ -11,7 +12,13 @@ export default function AboutPage() {
   return (
     <Layout>
       <div className="shell main page-copy">
+        <GuideArticleSchema
+          path="/about/"
+          title="About Shroom and Gloom Guide"
+          description="How the independent Shroom and Gloom Guide editorial team verifies card data, quest instructions, sources, and build labels."
+        />
         <h1>About Shroom and Gloom Guide</h1>
+        <EditorialByline />
         <p><strong>Shroom and Gloom Guide</strong> is an unofficial fan-created guide to the first-person roguelike double-deckbuilder game Shroom and Gloom.</p>
 
         <section>
@@ -64,7 +71,7 @@ export default function AboutPage() {
         <section>
           <h2>Suggesting a change</h2>
           <p>If you think a card is rated incorrectly, or if a quest walkthrough is wrong, you can submit feedback via the link below.</p>
-          <p><a href="#">Submit feedback or a card correction</a></p>
+          <p><a className="contact-link" href="/contact/">Submit feedback or a card correction</a></p>
           <p>(We do not collect emails. Submissions are anonymous. We review them after each patch.)</p>
         </section>
 

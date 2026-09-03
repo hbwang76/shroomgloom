@@ -31,6 +31,7 @@ export function Footer() {
           <Link href="/quests/">Quests</Link>
           <Link href="/patch-notes/">Patch Notes</Link>
           <Link href="/about/">About</Link>
+          <Link href="/contact/">Contact</Link>
           <Link href="/privacy/">Privacy</Link>
           <Link href="/terms/">Terms</Link>
           <Link href="/cookies/">Cookies</Link>

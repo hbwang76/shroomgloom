@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Layout } from '@/components/SiteChrome';
 import { deckLabel, getCard } from '@/data/cards';
-import { GuideArticleSchema } from '@/components/StructuredData';
+import { EditorialByline, GuideArticleSchema } from '@/components/StructuredData';
 
 // OpenNext's Workers Assets binding does not upload ISR cache entries.
 // Render verified card pages in the Worker instead of requesting a missing cache file.
@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       title: `${card.name} — Shroom and Gloom Card`,
       description: `Exact card text, class, and keywords for ${card.name}.`,
     },
+    other: { 'article:published_time': '2026-09-02', 'article:modified_time': '2026-09-03' },
   };
 }
 
@@ -48,6 +49,7 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
         <div className="detail">
           <div className={`class-badge class-${card.className.toLowerCase()}`}>{card.className}</div>
           <h1>{card.name}</h1>
+          <EditorialByline />
           <div className="meta">
             <span className="deck">{deckLabel[card.deck]}</span>
             <span>{typeof card.cost === 'number' ? `Cost ${card.cost}⚡` : 'Cost unverified'}</span>

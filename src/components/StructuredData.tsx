@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Script from 'next/script';
 
 type JsonLdProps = { data: Record<string, unknown> | Record<string, unknown>[] };
@@ -16,6 +17,7 @@ export const guideOrganization = {
   '@type': 'Organization',
   '@id': 'https://shroomgloom.online/#organization',
   name: 'Shroom and Gloom Guide',
+  alternateName: 'Shroom & Gloom Guide',
   url: 'https://shroomgloom.online/',
   logo: {
     '@type': 'ImageObject',
@@ -24,6 +26,12 @@ export const guideOrganization = {
     height: 630,
   },
   description: 'An unofficial, source-cited fan-made guide for Shroom and Gloom.',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'editorial corrections',
+    url: 'https://shroomgloom.online/contact/',
+    availableLanguage: ['en'],
+  },
 };
 
 export const guideAuthor = {
@@ -63,7 +71,7 @@ export function SiteStructuredData() {
 
 export const guideDates = {
   datePublished: '2026-09-02',
-  dateModified: '2026-09-02',
+  dateModified: '2026-09-03',
 };
 
 export const officialSources = [
@@ -71,6 +79,15 @@ export const officialSources = [
   'https://steamcommunity.com/app/3271280',
   'https://influencers.devolverdigital.com/shroom-and-gloom',
 ];
+
+export function EditorialByline() {
+  return (
+    <p className="byline">
+      By <Link href="/about/" rel="author">Shroom and Gloom Guide Editorial Team</Link> ·{' '}
+      Updated <time dateTime="2026-09-03">September 3, 2026</time>
+    </p>
+  );
+}
 
 export function GuideArticleSchema({
   path,

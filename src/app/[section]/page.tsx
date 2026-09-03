@@ -4,7 +4,7 @@ import { Layout } from '@/components/SiteChrome';
 import { CardBrowser } from '@/components/CardBrowser';
 import { GuideContent } from '@/components/GuideContent';
 import { pageCopy } from '@/lib/page-data';
-import { GuideArticleSchema } from '@/components/StructuredData';
+import { EditorialByline, GuideArticleSchema } from '@/components/StructuredData';
 
 // OpenNext's Workers Assets binding does not upload ISR cache entries.
 // Render these guide routes in the Worker rather than serving a missing cache file.
@@ -16,6 +16,7 @@ export async function generateMetadata({ params }: { params: { section: string }
     title: data.title,
     description: data.intro,
     alternates: { canonical: `https://shroomgloom.online/${params.section}/` },
+    other: { 'article:published_time': '2026-09-02', 'article:modified_time': '2026-09-03' },
   };
 }
 
@@ -28,6 +29,7 @@ export default function SectionPage({ params }: { params: { section: string } })
         <GuideArticleSchema path={`/${params.section}/`} title={data.title} description={data.intro} />
         <span className="eyebrow">SHROOM AND GLOOM GUIDE · DEMO BUILD 23718635</span>
         <h1>{data.title}</h1>
+        <EditorialByline />
         <p className="subhead">{data.intro}</p>
         {isCards ? (
           <section>

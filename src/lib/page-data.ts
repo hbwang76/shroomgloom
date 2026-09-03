@@ -10,7 +10,7 @@ export const pageCopy = {
     intro: 'Learn how Shroom and Gloom deckbuilding works: the properties that matter, the cards you are most likely to want, and what to take at Grow Closer during a run.',
   },
   '/characters/': {
-    title: 'Shroom and Gloom Characters — All 5 Launch Characters and How to Unlock Them',
+    title: 'Shroom and Gloom Characters — Launch Roster & Unlocks',
     intro: 'The five playable characters confirmed for Shroom and Gloom Early Access, the three more in the demo database, and the two quests that unlock new ones.',
   },
   '/beginner-guide/': {
