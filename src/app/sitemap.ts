@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { cards } from '@/data/cards';
 
-const origin = 'https://shroomandgloom.online';
+const origin = 'https://shroomgloom.online';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const fixed = [

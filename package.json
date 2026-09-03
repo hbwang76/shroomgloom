@@ -1,5 +1,5 @@
 {
-  "name": "shroomandgloom-guide",
+  "name": "shroomgloom-guide",
   "private": true,
   "scripts": {
     "dev": "next dev",

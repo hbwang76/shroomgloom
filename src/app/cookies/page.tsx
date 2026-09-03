@@ -21,7 +21,7 @@ export default function CookiesPage() {
         </section>
         <section>
           <h2>Contact</h2>
-          <p>For privacy requests, email contact@shroomandgloom.online.</p>
+          <p>For privacy requests, email contact@shroomgloom.online.</p>
         </section>
       </div>
     </Layout>

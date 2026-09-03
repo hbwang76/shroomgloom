@@ -15,7 +15,7 @@ export type Card = {
   verification_status: 'verified' | 'demo-verified' | 'unverified';
 };
 
-// Source: /root/workspace/shroomandgloom/copy/content-creator-verified-game-data-2026-09-02.md
+// Source: /root/workspace/shroomgloom/copy/content-creator-verified-game-data-2026-09-02.md
 // All data below is verified against Steam demo build 23718635. No invented tiers, no rarity, no synergy labels.
 export const cards: Card[] = [
   { slug: 'shovel', name: 'Shovel', deck: 'explore', className: 'Gear', cost: 'unverified', exactText: 'Dig for weapons', keywords: ['Gear'], properties: [], acquisition: 'Starter deck (one copy)', notes: ['Your weapon source.'], updated_at_build: 'demo build 23718635', verification_status: 'verified' },

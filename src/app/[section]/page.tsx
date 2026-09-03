@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: { section: string }
   return {
     title: data.title,
     description: data.intro,
-    alternates: { canonical: `https://shroomandgloom.online/${params.section}/` },
+    alternates: { canonical: `https://shroomgloom.online/${params.section}/` },
   };
 }
 

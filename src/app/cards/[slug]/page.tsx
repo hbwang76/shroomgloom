@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   return {
     title: `${card.name} — Shroom and Gloom Card`,
     description: `${card.name} (${deckLabel[card.deck]}, ${typeof card.cost === 'number' ? `${card.cost}⚡` : 'cost unverified'}): exact card text, class, keywords, and how it interacts with the demo's mechanics.`,
-    alternates: { canonical: `https://shroomandgloom.online/cards/${params.slug}/` },
+    alternates: { canonical: `https://shroomgloom.online/cards/${params.slug}/` },
     openGraph: {
       title: `${card.name} — Shroom and Gloom Card`,
       description: `Exact card text, class, and keywords for ${card.name}.`,

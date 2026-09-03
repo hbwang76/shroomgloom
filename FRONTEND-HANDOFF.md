@@ -3,7 +3,7 @@
 Status: [NEEDS_REVIEW]
 
 ## Delivered
-- Next.js App Router TypeScript frontend in `/root/projects/shroomandgloom/`.
+- Next.js App Router TypeScript frontend in `/root/projects/shroomgloom/`.
 - Dark, mobile-first design system extracted from `design/home-desktop.html` and `design/home-mobile.html`.
 - Homepage card browser with client-side text search, three deck filters, and tier filters on `/tier-list/`.
 - Static card detail generation for all currently published handoff example records in `src/data/cards.ts`.
