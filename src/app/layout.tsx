@@ -4,6 +4,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://shroomgloom.online'),
+  alternates: { canonical: 'https://shroomgloom.online/' },
   title: {
     default: 'Shroom and Gloom Guide — Cards, Builds, Quests',
     template: '%s | Shroom and Gloom Guide',
