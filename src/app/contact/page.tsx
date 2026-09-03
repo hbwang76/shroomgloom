@@ -6,6 +6,7 @@ import { StructuredData, guideDates } from '@/components/StructuredData';
 export const metadata: Metadata = {
   title: 'Contact — Shroom and Gloom Guide',
   description: 'Contact the Shroom and Gloom Guide editorial team about card data, quests, sources, or corrections.',
+  alternates: { canonical: 'https://shroomgloom.online/contact/' },
   robots: { index: false, follow: true },
 };
 

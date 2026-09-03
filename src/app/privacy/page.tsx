@@ -2,6 +2,7 @@ import { Layout } from '@/components/SiteChrome';
 
 export const metadata = {
   title: 'Privacy Policy — Shroom and Gloom Guide',
+  alternates: { canonical: 'https://shroomgloom.online/privacy/' },
   robots: { index: false, follow: true },
 };
 

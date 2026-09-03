@@ -3,6 +3,7 @@ import { EditorialByline, GuideArticleSchema } from '@/components/StructuredData
 
 export const metadata = {
   title: 'About — Shroom and Gloom Guide',
+  alternates: { canonical: 'https://shroomgloom.online/about/' },
   robots: { index: false, follow: true },
 };
 

@@ -2,6 +2,7 @@ import { Layout } from '@/components/SiteChrome';
 
 export const metadata = {
   title: 'Cookie Policy — Shroom and Gloom Guide',
+  alternates: { canonical: 'https://shroomgloom.online/cookies/' },
   robots: { index: false, follow: true },
 };
 

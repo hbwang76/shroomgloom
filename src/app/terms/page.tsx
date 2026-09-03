@@ -2,6 +2,7 @@ import { Layout } from '@/components/SiteChrome';
 
 export const metadata = {
   title: 'Terms of Service — Shroom and Gloom Guide',
+  alternates: { canonical: 'https://shroomgloom.online/terms/' },
   robots: { index: false, follow: true },
 };
 
