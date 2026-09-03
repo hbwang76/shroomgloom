@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Layout } from '@/components/SiteChrome';
-import { StructuredData, guideAuthor, guideOrganization, guideDates } from '@/components/StructuredData';
+import { StructuredData, guideDates } from '@/components/StructuredData';
 
 export const metadata: Metadata = {
   title: 'Contact — Shroom and Gloom Guide',

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Layout } from '@/components/SiteChrome';
 import { SearchSection } from '@/components/CardBrowser';
 import { cardCounts } from '@/data/cards';
-import { HomeFaqSchema } from '@/components/StructuredData';
+import { EditorialByline, GuideArticleSchema, HomeFaqSchema } from '@/components/StructuredData';
 
 // OpenNext's Workers Assets binding does not upload ISR cache entries.
 // Render this page in the Worker so the deployed source is always authoritative.
@@ -42,6 +42,11 @@ export default function HomePage() {
   return (
     <Layout>
       <div className="shell main">
+        <GuideArticleSchema
+          path="/"
+          title="Shroom and Gloom Guide — Cards, Builds, Quests"
+          description="Source-cited cards, builds, quests, and beginner guidance for Shroom and Gloom Early Access."
+        />
         <section className="hero">
           <picture className="hero-media" aria-hidden="true">
             <source media="(max-width: 640px)" srcSet="/images/shroomgloom/hero-mobile.webp" type="image/webp" />
@@ -54,6 +59,7 @@ export default function HomePage() {
             <p className="subhead">Search every card. See its exact text. Pick the right build.</p>
           </div>
         </section>
+        <EditorialByline />
         <SearchSection />
         <section className="below">
           <div>
