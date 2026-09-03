@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Layout } from '@/components/SiteChrome';
 import { deckLabel, getCard } from '@/data/cards';
-import { EditorialByline, GuideArticleSchema } from '@/components/StructuredData';
+import { EditorialByline, GuideArticleSchema, officialSources } from '@/components/StructuredData';
 
 // OpenNext's Workers Assets binding does not upload ISR cache entries.
 // Render verified card pages in the Worker instead of requesting a missing cache file.
@@ -92,6 +92,15 @@ export default function CardDetail({ params }: { params: { slug: string } }) {
             <summary>What build was this card checked against?</summary>
             <p>{card.updated_at_build}. The record remains verified against the demo build until re-verified against the Early Access build.</p>
           </details>
+        </section>
+        <section className="sources" aria-labelledby="card-sources">
+          <h2 id="card-sources">Sources and verification</h2>
+          <p>Card values reflect demo build {card.updated_at_build}; last verified September 3, 2026.</p>
+          <ul>
+            <li><a href={officialSources[0]} target="_blank" rel="noreferrer">Official Steam store page</a></li>
+            <li><a href={officialSources[1]} target="_blank" rel="noreferrer">Team Lazerbeam Steam updates</a></li>
+            <li><Link href="/about/">Source policy and correction process</Link></li>
+          </ul>
         </section>
       </div>
     </Layout>

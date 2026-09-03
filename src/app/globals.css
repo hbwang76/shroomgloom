@@ -103,6 +103,7 @@ tr:last-child td { border-bottom: 0; }
 .faq summary { cursor: pointer; color: var(--ink); font-weight: 600; }
 .sources { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--line); }
 .sources blockquote { margin: 0 0 16px; padding-left: 16px; border-left: 2px solid var(--amber); color: var(--ink); }
+.sources a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
 
 @media (max-width: 640px) {
   .shell { padding: 0 16px; }
