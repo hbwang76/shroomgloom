@@ -8,11 +8,11 @@ export const metadata: Metadata = {
     default: 'Shroom and Gloom Guide — Cards, Builds, Quests',
     template: '%s | Shroom and Gloom Guide',
   },
-  description: 'Shroom and Gloom guide built on verified demo data: 523 cards across Explore, Combat and Foresight, ten quests, and the two characters that unlock. Card text straight from the source.',
+  description: 'Shroom and Gloom guide with verified demo data: 523 cards, ten quests, and two character unlocks. Read exact card text from cited sources and build labels.',
   alternates: { canonical: 'https://shroomgloom.online/' },
   openGraph: {
     title: 'Shroom and Gloom Guide — Cards, Builds, Quests',
-    description: 'Built on Steam demo build 23718635. Every card\'s exact text, the full quest list, and the two character-unlock paths.',
+    description: 'Built on Steam demo build 23718635. Read exact card text, the full quest list, and the two character unlock paths, with sources and build labels.',
     url: 'https://shroomgloom.online/',
     siteName: 'Shroom and Gloom Guide',
     images: [{ url: '/images/shroomgloom/og-home.webp', width: 1200, height: 630, alt: 'Shroom and Gloom Guide' }],

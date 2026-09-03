@@ -44,7 +44,7 @@ export default function HomePage() {
         <section className="hero">
           <picture className="hero-media" aria-hidden="true">
             <source media="(max-width: 640px)" srcSet="/images/shroomgloom/hero-mobile.webp" type="image/webp" />
-            <img src="/images/shroomgloom/hero-desktop.webp" alt="" width="1920" height="900" fetchPriority="high" />
+            <img src="/images/shroomgloom/hero-desktop.webp" alt="A candle-lit fungal cavern with a Shroom and Gloom card hand" width="1920" height="900" fetchPriority="high" />
           </picture>
           <div className="hero-overlay" />
           <div className="hero-copy">

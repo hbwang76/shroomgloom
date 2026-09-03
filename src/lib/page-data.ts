@@ -7,7 +7,7 @@ export const pageCopy = {
   },
   '/best-builds/': {
     title: 'Shroom and Gloom Builds — How to Build a Deck (Early Access)',
-    intro: 'How Shroom and Gloom deckbuilding actually works: the properties that matter, the cards you\'re most likely to want, and what to take at Grow Closer.',
+    intro: 'Learn how Shroom and Gloom deckbuilding works: the properties that matter, the cards you are most likely to want, and what to take at Grow Closer during a run.',
   },
   '/characters/': {
     title: 'Shroom and Gloom Characters — All 5 Launch Characters and How to Unlock Them',

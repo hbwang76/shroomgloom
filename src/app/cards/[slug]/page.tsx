@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   if (!card) return { title: 'Card not found' };
   return {
     title: `${card.name} — Shroom and Gloom Card`,
-    description: `${card.name} (${deckLabel[card.deck]}, ${typeof card.cost === 'number' ? `${card.cost}⚡` : 'cost unverified'}): exact card text, class, keywords, and how it interacts with the demo's mechanics.`,
+    description: `${card.name} (${deckLabel[card.deck]}, ${typeof card.cost === 'number' ? `${card.cost}⚡` : 'cost unverified'}): exact text, class, keywords, and verified notes from demo build 23718635, with sources.`,
     alternates: { canonical: `https://shroomgloom.online/cards/${params.slug}/` },
     openGraph: {
       title: `${card.name} — Shroom and Gloom Card`,
